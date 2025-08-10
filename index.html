@@ -25,6 +25,7 @@
     <!-- Main Style -->
     <link rel="stylesheet" id="main_style" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/responsive.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
 </head>
 
@@ -360,10 +361,20 @@
                                 <div class="portfolio-content-items">
                                     <div class="row">
                                         <div class="col-lg-4 col-md-6 col-xs-12 mix graphics templates">
-                                            <div class="hovereffect">
-                                                <div class="portfolio-img">
-                                                    <img src="assets/img/portfolio/11.jpg" alt="admin">
-                                                    <h3><span>Laporan</span><span>SAP</span></h3>
+                                                    <div class="hovereffect">
+                                                        <div class="portfolio-img">
+                                                            <!-- Slider Gambar -->
+                                                            <div class="swiper admin-slider">
+                                                                <div class="swiper-wrapper">
+                                                                    <div class="swiper-slide"><img src="assets/img/portfolio/kebon1.jpg" alt="kebon 1"></div>
+                                                                    <div class="swiper-slide"><img src="assets/img/portfolio/kebon2.jpg" alt="kebon 2"></div>
+                                                                    <div class="swiper-slide"><img src="assets/img/portfolio/kebon3.jpg" alt="kebon 3"></div>
+                                                                </div>
+                                                                <div class="swiper-pagination"></div>
+                                                            </div>
+                                                            <h3><span>Dashboard Admin</span><span>Tilik Kebon</span></h3>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                                 <div class="overlay">
                                                     <div class="overlay-info">
@@ -545,6 +556,15 @@
     <!-- Main Js -->
     <script src="assets/js/ms-tools.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  var swiper = new Swiper('.admin-slider', {
+    loop: true,
+    pagination: { el: '.swiper-pagination', clickable: true },
+    autoplay: { delay: 3000 }
+  });
+</script>
+
 
 </body>
 
