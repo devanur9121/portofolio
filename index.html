@@ -348,9 +348,9 @@
                             <div class="col-sm-12" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="400">
                                 <div class="portfolio-tabs">
                                     <ul>
-                                        <li class="filter" data-filter="all">DEVELOPMENT</li>
-                                        <li class="filter" data-filter=".design">WEB</li>
+                                        <li class="filter" data-filter="all">ALL</li>
                                         <li class="filter" data-filter=".admin">ADMIN</li>
+                                        <li class="filter" data-filter=".design">WEB</li>
 <!--                                         <li class="filter" data-filter=".development">DEVELOPMENT</li> -->
                                         <!-- <li class="filter" data-filter=".graphics">GRAPHICS</li>
                                         <li class="filter" data-filter=".templates">Templates</li> -->
@@ -386,7 +386,42 @@
                                                         </div>
                                                     </div>
                                             </div>
-                                       
+                                       <div class="col-lg-4 col-md-6 col-xs-12 mix graphics admin">
+                                                    <div class="hovereffect">
+                                                        <div class="portfolio-img">
+                                                            <!-- Slider Gambar -->
+                                                            <div class="swiper admin-slider">
+                                                              <div class="swiper-wrapper">
+                                                                <div class="swiper-slide">
+                                                                  <img src="assets/img/portfolio/LAPROD1.png" alt="Laporan Produksi - Pivot Table 1" />
+                                                                  <h3><span>Admin</span><span>Pivot Table</span></h3>
+                                                                </div>
+                                                                <div class="swiper-slide">
+                                                                  <img src="assets/img/portfolio/LAPROD2.png" alt="Laporan Produksi - Pivot Table 2" />
+                                                                  <h3><span>Admin</span><span>Pivot Table</span></h3>
+                                                                </div>
+                                                                <div class="swiper-slide">
+                                                                  <img src="assets/img/portfolio/SAP1.png" alt="Rekap SAP via Excel" />
+                                                                  <h3><span>Admin</span><span>Rekap SAP (Excel)</span></h3>
+                                                                </div>
+                                                              </div>
+                                                            
+                                                              <!-- Pagination -->
+                                                              <div class="swiper-pagination"></div>
+                                                            
+                                                              <!-- Tombol Excel Overlay -->
+                                                              <a class="excel-overlay" href="assets/files/Laporan_Admin_Produksi.xlsx" target="_blank" rel="noopener">📥 Excel</a>
+                                                            </div>
+                                                            </div>
+                                                            <div class="overlay">
+                                                                <div class="overlay-info">
+                                                                    <a class="info" href="#"><i class="fa fa-link" aria-hidden="true"></i></a>
+                                                                    <a class="info" data-fancybox="gallery" href="assets/img/portfolio/1.jpg"><i class="fa fa-search" aria-hidden="true"></i></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                            </div>
                                         <div class="col-lg-4 col-md-6 col-xs-12 mix design">
                                             <div class="hovereffect">
                                                  <div class="portfolio-img">
@@ -469,7 +504,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-4 col-md-6 col-xs-12 mix development">
+                                        <div class="col-lg-4 col-md-6 col-xs-12 mix design">
                                             <div class="hovereffect">
                                                    <div class="portfolio-img">
                                                             <!-- Slider Gambar -->
@@ -498,7 +533,7 @@
                                         </div>
                                         </div>
                                         
-                                        <div class="col-lg-4 col-md-6 col-xs-12 mix development graphics">
+                                        <div class="col-lg-4 col-md-6 col-xs-12 mix design">
                                             <div class="hovereffect">
                                                 <div class="portfolio-img">
                                                             <!-- Slider Gambar -->
@@ -524,7 +559,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                        <div class="col-lg-4 col-md-6 col-xs-12 mix development graphics">
+                                        <div class="col-lg-4 col-md-6 col-xs-12 mix design graphics">
                                             <div class="hovereffect">
                                                 <div class="portfolio-img">
                                                             <!-- Slider Gambar -->
@@ -658,7 +693,31 @@
     autoplay: { delay: 3000 }
   });
 </script>
+<style>
+    .admin-slider {
+  position: relative;
+}
 
+.excel-overlay {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #4CAF50;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 14px;
+  opacity: 0.85;
+  transition: opacity 0.2s ease, background-color 0.2s ease;
+  z-index: 10;
+}
+
+.excel-overlay:hover {
+  opacity: 1;
+  background-color: #45a049;
+}
+</style>
 
 </body>
 
